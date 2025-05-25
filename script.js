@@ -1,109 +1,109 @@
 const questions = [
-    { q: "1. ¿Cómo se llama el punto donde convergen los rayos refractados?", options: ["Centro de curvatura", "Foco", "Vértice", "Plano focal"], a: 1 },
+    { q: "1. ¿Cómo se llama el punto donde convergen los rayos refractados?", options: ["Centro de curvatura", "Foco", "Vértice", "Eje focal"], a: 1 },
     { q: "2. ¿Qué distancia separa el vértice y el foco?", options: ["Radio de curvatura", "Longitud de onda", "Distancia focal", "Aumento"], a: 2 },
-    { q: "3. Espejo que curva hacia afuera es un espejo…", options: ["Cóncavo", "Convexo", "Plano", "Esférico"], a: 1 },
-    { q: "4. Un lente más grueso en el centro es un lente…", options: ["Divergente", "Convergente", "Plano", "Asférico"], a: 1 },
+    { q: "3. Un espejo que tiene su curva hacia afuera es un espejo…", options: ["Cóncavo", "Convexo", "Plano", "Esférico"], a: 1 },
+    { q: "4. Un lente más grueso en su centro es un lente…", options: ["Divergente", "Convergente", "Plano", "Esférico"], a: 1 },
     { q: "5. La ley de reflexión iguala los ángulos de incidencia y…", options: ["Refracción", "Reflexión", "Difracción", "Dispersión"], a: 1 },
-    { q: "6. Las ondas mecánicas necesitan…", options: ["Un campo eléctrico", "Un medio material", "Vacío", "Un imán"], a: 1 },
+    { q: "6. Las ondas mecánicas para su propagación necesitan de", options: ["Un campo eléctrico", "Un medio material", "el vacío", "Un imán"], a: 1 },
     { q: "7. La distancia entre cresta y cresta se llama…", options: ["Amplitud", "Frecuencia", "Longitud de onda", "Periodo"], a: 2 },
-    { q: "8. Una onda transversal oscila…", options: ["Paralela a propagación", "Perpendicular a propagación", "Circular", "No oscila"], a: 1 },
-    { q: "9. Frecuencia se mide en…", options: ["Newton", "Hertz", "Joule", "Tesla"], a: 1 },
-    { q: "10. Ecuación de onda v = λ·f, f es…", options: ["Amplitud", "Frecuencia", "Longitud de onda", "Velocidad"], a: 1 },
+    { q: "8. Una onda transversal oscila…", options: ["Paralela a la velocidad de propagacion", "Perpendicular a la velocidad de propagacion", "Sobrepuesta a la velocidad de propagacion"], a: 1 },
+    { q: "9.La frecuencia de una OEM depende unicamente de: ", options: ["La fuente que la genera", "La intensidad de la onda ", "La amplitud de la onda", "El medio en donde actúa"], a: 1 },
+    { q: "10. En la ecuación de onda v = λ·f, f es inversamente proporcional a λ pero directamente proporciona a:", options: ["La amplitud", "La frecuencia", "La longitud de onda", "La velocidad de propagacion"], a: 3 },
     { q: "11. Fuerza en resorte F = -k·x, k es…", options: ["Constante de Hooke", "Masa", "Frecuencia", "Periodo"], a: 0 },
-    { q: "12. Periodo T en MAS es T = 2π√(m/k), dependencia…", options: ["Directa", "Inversa", "Cuadrática", "Ninguna"], a: 1 },
-    { q: "13. Energía potencial en resorte es…", options: ["½mv²", "½kx²", "k/x", "mx²"], a: 1 },
-    { q: "14. Las ondas electromagnéticas viajan en…", options: ["Medio material", "Vacío", "Sólo agua", "Sólo aire"], a: 1 },
-    { q: "15. La luz visible abarca longitudes de onda…", options: ["100–400 nm", "400–700 nm", "700–1000 nm", "1–10 mm"], a: 1 },
-    { q: "16. Interferencia constructiva requiere diferencia de camino…", options: ["n·λ", "(n+0.5)·λ", "λ/2", "3λ/2"], a: 0 },
-    { q: "17. Interferencia destructiva ocurre si…", options: ["n·λ", "(n+0.5)·λ", "2nλ", "n/2 λ"], a: 1 },
-    { q: "18. Experimento de doble rendija fue realizado por…", options: ["Fresnel", "Young", "Newton", "Huygens"], a: 1 },
-    { q: "19. Relatividad especial es de…", options: ["Maxwell", "Einstein", "Newton", "Galileo"], a: 1 },
-    { q: "20. Ecuación E=mc² relaciona…", options: ["Energía y momento", "Masa y aceleración", "Energía y masa", "Frecuencia y longitud"], a: 2 },
-    { q: "21. El efecto fotoeléctrico demuestra la naturaleza…", options: ["Ondulatoria de luz", "Corpuscular de luz", "Polarización", "Difracción"], a: 1 },
-    { q: "22. Fotones liberan electrones en…", options: ["Corte láser", "Efecto Compton", "Efecto fotoeléctrico", "Dispersión"], a: 2 },
-    { q: "23. En efecto Compton, los fotones chocan contra…", options: ["Protones", "Electrones", "Neutrones", "Átomos completos"], a: 1 },
-    { q: "24. Sonido es una onda…", options: ["Transversal", "Longitudinal", "Electromagnética", "Cuántica"], a: 1 },
-    { q: "25. Velocidad del sonido en aire a 20°C ~…", options: ["300 m/s", "343 m/s", "1500 m/s", "10 m/s"], a: 1 },
-    { q: "26. En un M.A.S, la dirección de la fuerza recuperadora es hacia:", options: ["El equilibrio", "El extremo", "El centro de masa", "El nodo"], a: 0 },
-    { q: "27. La velocidad en la posición de equilibrio de un M.A.S es:", options: ["Máxima", "Mínima", "Cero", "Infinita"], a: 0 },
-    { q: "28. En los extremos de un M.A.S la aceleración es:", options: ["Máxima", "Nula", "Constante", "Mínima"], a: 0 },
-    { q: "29. La energía cinética máxima en un M.A.S sucede en:", options: ["Equilibrio", "Extremos", "Centro de masa", "Nodo"], a: 0 },
-    { q: "30. Si una partícula describe un M.A.S de amplitud A, cuando la posición es A/2, la velocidad es:", options: ["√3/2 vmax", "½ vmax", "vmax", "0"], a: 0 },
-    { q: "31. La aceleración en cualquier instante en un M.A.S es igual a:", options: ["–ω²x", "ωx", "kx", "v/t"], a: 0 },
-    { q: "32. En una onda el número angular de onda se define como:", options: ["2π/λ", "2πf", "λ/2π", "ωt"], a: 0 },
-    { q: "33. La longitud de onda es la distancia que recorre un pulso de onda en un tiempo igual a un:", options: ["Período", "Segundo", "Ciclo", "Pulso"], a: 0 },
-    { q: "34. La razón entre la frecuencia angular y el número de onda corresponde a la:", options: ["Velocidad de propagación", "Frecuencia", "Longitud de onda", "Amplitud"], a: 0 },
-    { q: "35. Fuente de 660 Hz se acerca a 10 m/s, la frecuencia percibida es:", options: ["Mayor a 660 Hz", "Menor a 660 Hz", "660 Hz", "0 Hz"], a: 0 },
-    { q: "36. Cuando se aleja, la frecuencia percibida es:", options: ["Menor a 660 Hz", "Mayor a 660 Hz", "660 Hz", "0 Hz"], a: 0 },
-    { q: "37. El tiempo que tarda un cuerpo en realizar un ciclo completo se llama:", options: ["Período", "Frecuencia", "Amplitud", "Fase"], a: 0 },
-    { q: "38. Si una onda realiza 10 oscilaciones en 5 s, la frecuencia es:", options: ["2 Hz", "5 Hz", "0.5 Hz", "10 Hz"], a: 0 },
-    { q: "39. Si la intensidad de una onda sonora es el doble de la mínima audible, el nivel de intensidad sonora es:", options: ["3 dB", "0 dB", "10 dB", "6 dB"], a: 0 },
-    { q: "40. Nivel sonoro es el doble al acercarse a:", options: ["5 m", "7 m", "10 m", "20 m"], a: 0 },
-    { q: "41. Nivel en dB para la intensidad mínima audible es igual a:", options: ["0 dB", "10 dB", "1 dB", "–10 dB"], a: 0 },
-    { q: "42. A 10 m de la fuente, el nivel es:", options: ["Menor que cuando se acerca", "Mayor que cuando se acerca", "Igual", "Nulo"], a: 0 },
-    { q: "43. Intensidad a 10 m de fuente de 40π W es:", options: ["0.1 W/m²", "0.2 W/m²", "0.4 W/m²", "0.05 W/m²"], a: 0 },
-    { q: "44. Nivel de intensidad sonora en dB es:", options: ["116 dB", "100 dB", "80 dB", "60 dB"], a: 0 },
-    { q: "45. Frecuencia n=3 si n=1 es A Hz:", options: ["3A", "2A", "A", "A/3"], a: 0 },
-    { q: "46. Cuerda con 3 antinodos, si f₁ = 100 Hz, entonces f =:", options: ["300 Hz", "200 Hz", "100 Hz", "50 Hz"], a: 0 },
-    { q: "47. Distancia entre dos nodos consecutivos en una onda estacionaria es:", options: ["λ/2", "λ", "2λ", "λ/4"], a: 0 },
-    { q: "48. Unidad de frecuencia en el SI es:", options: ["Hertz", "Segundo", "Newton", "Julio"], a: 0 },
-    { q: "49. Si la longitud del péndulo se aumenta, el período:", options: ["Aumenta", "Disminuye", "No cambia", "Se vuelve cero"], a: 0 },
-    { q: "50. Si la masa del péndulo disminuye, el período es:", options: ["Igual", "Mayor", "Menor", "Cero"], a: 0 },
-    { q: "51. Si la masa de un sistema masa-resorte se cuadruplica, el periodo se:", options: ["Duplica", "Cuadruplica", "Se reduce a la mitad", "No cambia"], a: 0 },
-    { q: "52. El intervalo de decibeles que una persona normal escucha es de:", options: ["0–120 dB", "20–20 000 Hz", "0–100 dB", "10–110 dB"], a: 0 },
-    { q: "53. La intensidad mínima audible por el ser humano es:", options: ["10⁻¹² W/m²", "10⁻⁶ W/m²", "10⁻³ W/m²", "10⁻⁹ W/m²"], a: 0 },
-    { q: "54. La razón entre la masa en reposo de un electrón y un protón es de un orden de magnitud de:", options: ["10⁻³", "10⁻¹", "1", "10³"], a: 0 },
-    { q: "55. Si el nivel a 10 m es 10 dB, al aumentar la distancia será:", options: ["< 10 dB", "> 10 dB", "= 10 dB", "= 0 dB"], a: 0 },
-    { q: "56. Si una onda EM tiene el campo eléctrico en +y y viaja en –x, la dirección de B es:", options: ["+z", "–z", "+x", "+y"], a: 0 },
-    { q: "57. La energía en reposo de un electrón en MeV es:", options: ["0.511", "1.022", "0.256", "0.127"], a: 0 },
-    { q: "58. La distancia que recorre una onda en un periodo se llama:", options: ["Longitud de onda", "Frecuencia", "Periodo", "Velocidad"], a: 0 },
-    { q: "59. La razón entre la rapidez de la luz en el vacío y en un medio se llama:", options: ["Índice de refracción", "Velocidad relativa", "Permitividad", "Permeabilidad"], a: 0 },
-    { q: "60. Si λ duplica en otro medio, la razón de velocidades es:", options: ["2", "0.5", "1", "√2"], a: 0 },
-    { q: "61. ¿Cuál es el rango aproximado del espectro visible?:", options: ["400–700 nm", "100–400 nm", "700–1000 nm", "1–10 µm"], a: 0 },
-    { q: "62. Si una ambulancia se aleja, la frecuencia percibida es:", options: ["< f₀", "> f₀", "= f₀", "0 Hz"], a: 0 },
-    { q: "63. El efecto fotoeléctrico se produce cuando λ del fotón es:", options: ["< λ_umbral", "> λ_umbral", "= λ_umbral", "nulo"], a: 0 },
-    { q: "64. En fotoeléctrico, Eₖ máx. de electrones es proporcional a la:", options: ["Frecuencia", "Longitud de onda", "Amplitud", "Intensidad"], a: 0 },
-    { q: "65. El momento de un fotón es inversamente proporcional a la:", options: ["Longitud de onda", "Frecuencia", "Energía", "Velocidad"], a: 0 },
-    { q: "66. Imágenes formadas por lentes divergentes son:", options: ["Virtuales y derechas", "Reales e invertidas", "Virtuales e invertidas", "Reales y derechas"], a: 0 },
-    { q: "67. Objeto en el centro de curvatura frente a espejo cóncavo da imagen:", options: ["Igual e invertida", "Virtual y derecha", "Ampliada", "Diminuta"], a: 0 },
-    { q: "68. En el espectro EM, ondas de orden metros son:", options: ["Radio", "Microondas", "Infrarrojo", "Luz visible"], a: 0 },
-    { q: "69. La razón ω/v corresponde a:", options: ["k", "ω", "T", "λ"], a: 0 },
-    { q: "70. En fotoeléctrico, f_incidente debe ser ____ f_umbral:", options: [">", "<", "=", "×"], a: 0 },
-    { q: "71. Si un cohete va a 0.86 c, su longitud se:", options: ["Contrae", "Dilata", "Mantiene", "Invierte"], a: 0 },
-    { q: "72. Luz de n menor a mayor, ángulo refractado es ____ que el incidente:", options: ["Menor", "Mayor", "Igual", "Nulo"], a: 0 },
-    { q: "73. Objeto a 8 cm de lente divergente f=4 cm, di es:", options: ["–4 cm", "4 cm", "8 cm", "–8 cm"], a: 0 },
-    { q: "74. Diferencia entre energía total y de reposo es:", options: ["Cinética", "Libre", "Exceso", "Potencial"], a: 0 },
-    { q: "75. ¿Cuánto equivale 200 J en MeV?", options: ["1.25×10¹⁵", "2.00×10⁰", "1.25×10³", "0.20×10⁻³"], a: 0 },
-    { q: "76. El producto q·V_frenado en fotoeléctrico se llama:", options: ["Trabajo", "Potencia", "Potencial", "Energía cinética"], a: 0 },
-    { q: "77. Ángulo de incidencia es ____ que el refractado:", options: ["Mayor", "Menor", "Igual", "Inverso"], a: 0 },
-    { q: "78. La masa en reposo de un fotón es:", options: ["0", "1", "–1", "0.5"], a: 0 },
-    { q: "79. Dirección del vector de Poynting coincide con:", options: ["Propagación", "Campo E", "Campo B", "Plano de onda"], a: 0 },
-    { q: "80. Punto donde convergen rayos paralelos en lente convergente:", options: ["Foco", "Centro", "Origen", "Plano focal"], a: 0 },
-    { q: "81. Imágenes en espejos convexos son:", options: ["Virtuales y reducidas", "Reales e invertidas", "Virtuales e invertidas", "Reales"], a: 0 },
-    { q: "82. Energía en MeV de fotón λ=400 nm es:", options: ["3.10×10⁻⁶", "4.14×10⁻³", "1.24×10⁻³", "6.20×10⁻⁵"], a: 0 },
-    { q: "83. Si en t=0,x=0 y=0, la fase inicial es:", options: ["0", "π", "π/2", "2π"], a: 0 },
-    { q: "84. La miopía se corrige con lentes:", options: ["Cóncavas", "Convergentes", "Planas", "Asféricas"], a: 0 },
-    { q: "85. Promedio magnitud de Poynting en EM plana representa:", options: ["Intensidad", "Potencia", "Energía", "Flujo"], a: 0 },
-    { q: "86. Un ojo emétrope es un ojo:", options: ["Normal", "Miopía", "Hipermetropía", "Astigmatismo"], a: 0 },
-    { q: "87. A bajas velocidades el factor de Lorentz tiende a:", options: ["1", "0", "∞", "c"], a: 0 },
-    { q: "88. La longitud de onda de Compton en nm es:", options: ["0.00243", "0.0243", "0.243", "2.43"], a: 0 },
-    { q: "89. Dispersión de Compton depende del ángulo:", options: ["θ", "2θ", "π", "λ"], a: 0 },
-    { q: "90. λ de fotón X es ____ que UV:", options: ["Menor", "Mayor", "Igual", "Inverso"], a: 0 },
-    { q: "91. Ángulo crítico agua→aire es:", options: ["45°", "30°", "60°", "90°"], a: 0 },
-    { q: "92. En espejo cóncavo, objeto en foco da imagen en:", options: ["Infinito", "Centro de curvatura", "Orígenes", "Plano focal"], a: 0 },
-    { q: "93. Lente 5 dioptrías tiene f (cm):", options: ["20", "5", "100", "50"], a: 0 },
-    { q: "94. Energía por unidad de tiempo corresponde a la:", options: ["Potencia", "Trabajo", "Energía", "Flujo"], a: 0 },
-    { q: "95. Si f_corte=200 GHz, función de trabajo en eV es aprox.:", options: ["0.83×10⁻³", "1.32×10⁻³", "2.00×10⁻³", "0.40×10⁻³"], a: 0 },
-    { q: "96. La hipermetropía se corrige con lentes:", options: ["Convexas", "Cóncavas", "Planas", "Asféricas"], a: 0 },
-    { q: "97. Energía en reposo de un protón en MeV es:", options: ["938", "511", "105.7", "0"], a: 0 },
-    { q: "98. UV 400–700 nm equivale en eV a:", options: ["1.77–3.10", "0.50–1.00", "3.10–4.00", "0.10–0.50"], a: 0 },
-    { q: "99. Regla 1 m en v=0.8 c mide:", options: ["0.6 m", "1 m", "1.4 m", "0.8 m"], a: 0 },
-    { q: "100. y=3 sin(5 t–2 x), dirección de propagación:", options: ["+x", "–x", "+t", "–t"], a: 0 },
-    { q: "101. Velocidad de esa onda (m/s):", options: ["2.5", "0.4", "3.0", "1.5"], a: 0 },
-    { q: "102. Pendiente de Eₖ vs ν en fotoeléctrico representa:", options: ["h (constante de Planck)", "φ (función de trabajo)", "c", "e"], a: 0 },
-    { q: "103. Momento de electrón con E_total=2 E₀ (MeV/c):", options: ["√3 m c", "m c", "2 m c", "½ m c"], a: 0 },
-    { q: "104. Si γ=5/3, la rapidez v es:", options: ["0.8 c", "0.6 c", "0.5 c", "0.9 c"], a: 0 },
-    { q: "105. V/F: Eₖ máxima depende de la intensidad incidente:", options: ["Verdadero", "Falso"], a: 1 },
+    { q: "12. El periodo T en el M.A.S es T = 2π√(m/k), en donde posee una dependencia ________________ : ", options: ["Directa", "Inversa", "Cuadrática", "Ninguna"], a: 1 },
+    { q: "13. La energía potencial en un resorte es…", options: ["½mv²", "½kx²", "k/x", "mx²"], a: 1 },
+    { q: "14. Las ondas electromagnéticas, para viajar, necesitan de: ", options: ["Un medio material", "El vacío", "Sólo agua", "Sólo aire"], a: 1 },
+    { q: "15. La luz visible abarca longitudes de onda entre: ", options: ["100–400 nm", "400–700 nm", "700–1000 nm", "1–10 mm"], a: 1 },
+    { q: "16. La interferencia constructiva requiere diferencia de camino de ", options: ["n·λ", "(n+0.5)·λ", "λ/2", "3λ/2"], a: 0 },
+    { q: "17. La interferencia destructiva con relación a lambda ocurre cuando la expresión es: ", options: ["n·λ", "(n+0.5)·λ", "2nλ", "n/2 λ"], a: 1 },
+    { q: "18. El experimento de doble rendija fue realizado por…", options: ["Fresnel", "Young", "Mitchell", "Young"], a: 3 },
+    { q: "19. La Relatividad especial fue formulada y demostrada por: ", options: ["Maxwell", "Einstein", "Newton", "Galileo"], a: 1 },
+    { q: "20. La Ecuación E=mc² relaciona…", options: ["Energía y momento", "Masa y aceleración", "Energía y masa", "Frecuencia y longitud"], a: 2 },
+    { q: "21. El efecto fotoeléctrico demuestra la naturaleza…", options: ["Ondulatoria de la luz", "Corpuscular de la luz", "Polarización", "Difracción"], a: 1 },
+    { q: "22. Los Fotones liberan electrones en…", options: ["Corte láser", "Efecto Compton", "Efecto fotoeléctrico", "Dispersión"], a: 2 },
+    { q: "23. En el efecto Compton, los fotones chocan contra…", options: ["Protones", "Electrones", "Neutrones", "Átomos completos"], a: 1 },
+    { q: "24. El sonido es una onda…", options: ["Transversal", "Longitudinal", "Electromagnética", "Cuántica"], a: 1 },
+    { q: "25. Velocidad del sonido en aire es igual a: ", options: ["300 m/s", "343 m/s", "1500 m/s", "10 m/s"], a: 1 },
+    { q: "26. En un M.A.S, la dirección de la fuerza recuperadora es hacia:", options: ["El extremo", "El centro de masa", "La posición de equilibrio", "El nodo"], a: 2 }, // Corrected based on answer 1 [cite: 37]
+  { q: "27. La velocidad en la posición de equilibrio de un M.A.S es:", options: ["Cero", "Infinita", "Mínima", "Máxima"], a: 3 }, // Corrected based on answer 2 [cite: 37]
+  { q: "28. En los extremos de un M.A.S la aceleración es:", options: ["Constante", "Máxima", "Mínima", "Nula"], a: 1 }, // Corrected based on answer 3 [cite: 37]
+  { q: "29. La energía cinética máxima en un M.A.S sucede en:", options: ["Extremos", "La posición de equilibrio", "Centro de masa", "Nodo"], a: 1 }, // Corrected based on answer 4 [cite: 37]
+  { q: "30. Si una partícula describe un M.A.S de amplitud A, cuando la posición es A/2, la velocidad es:", options: ["½ vmax", "0", "√3/2 vmax", "La velocidad es positiva, depende de K,m y de la amplitud"], a: 3 }, // Corrected based on answer 5 [cite: 37]
+  { q: "31. La aceleración en cualquier instante en un M.A.S es igual a:", options: ["kx", "–w^2 x", "ωx", "v/t"], a: 1 }, // Corrected based on answer 6 [cite: 37]
+  { q: "32. En una onda el número angular de onda se define como:", options: ["2πf", "ωt", "λ/2π", "Numero de onda k=2pi/landa"], a: 3 }, // Corrected based on answer 7 [cite: 37]
+  { q: "33. La longitud de onda es la distancia que recorre un pulso de onda en un tiempo igual a un:", options: ["Segundo", "Ciclo", "Periodo", "Pulso"], a: 2 }, // Corrected based on answer 8 [cite: 37]
+  { q: "34. La razón entre la frecuencia angular y el número de onda corresponde a la:", options: ["Longitud de onda", "Frecuencia", "Velocidad de propagación de la onda", "Amplitud"], a: 2 }, // Corrected based on answer 9 [cite: 37]
+  { q: "35. Si una fuente de f=660 Hz se acerca a 10 m/s a un observador en reposo, la frecuencia en Hz que percibirá éste es:", options: ["Menor a 680 Hz", "680 Hz", "0 Hz", "660 Hz"], a: 1 }, // Corrected based on answer 10 [cite: 37]
+  { q: "36. En el mismo punto anterior la frecuencia en Hz que percibe cuando el auto se aleja es:", options: ["660 Hz", "680 Hz", "641.7 Hz", "0 Hz"], a: 1 }, // Corrected based on answer 11 [cite: 37]
+  { q: "37. El tiempo que tarda un cuerpo en realizar un ciclo completo se llama:", options: ["Amplitud", "Fase", "Periodo", "Frecuencia"], a: 2 }, // Corrected based on answer 12 [cite: 37]
+  { q: "38. Si una onda realiza 10 oscilaciones en 5 segundos, su frecuencia en Hz es:", options: ["10 Hz", "5 Hz", "0.5 Hz", "2Hz"], a: 3 }, // Corrected based on answer 13 [cite: 37]
+  { q: "39. Si la intensidad de una onda sonora es el doble de la mínima audible, el nivel de intensidad sonora es:", options: ["3.111 dB", "3.001 dB", "30.01 dB", "3.01 dB"], a: 3 }, // Corrected based on answer 14 [cite: 37]
+  { q: "40. El nivel de una fuente sonora puntual de intensidad sonora es el doble que cuando está a la distancia de:", options: ["7 m", "20 m", "14.14m", "10 m"], a: 2 }, // Corrected based on answer 15 [cite: 37]
+  { q: "41. El nivel de intensidad sonora en dB para la intensidad mínima audible es igual a:", options: ["120 dB", "1x10^-2 dB", " 1x10^12dB", "1x10^–10 dB"], a: 2 }, // Corrected based on answer 16 [cite: 37]
+  { q: "42. A una distancia de 10 m de una fuente sonora puntual, el nivel de intensidad sonora es: que cuando se acerca.", options: ["Igual", "Mayor que cuando se acerca", "Nulo", "Disminuye"], a: 3 }, // Corrected based on answer 17 [cite: 37]
+  { q: "43. A una observación de 10 m de una fuente puntual sonora de 40 W de potencia, la intensidad en W/m² es:", options: ["0.4 W/m²", "0.05 W/m²", "0.2 W/m²", "0.1 W/m²"], a: 3 }, // Corrected based on answer 18 [cite: 37]
+  { q: "44. En el mismo ejercicio anterior, el nivel de intensidad sonora en dB es:", options: ["80 dB", "60 dB", "100 dB", "110 dB"], a: 3 }, // Corrected based on answer 19 [cite: 37]
+  { q: "45. Si la frecuencia fundamental (n=1) en una cuerda que vibra es de A Hz, la frecuencia para n=3 será:", options: ["2A", "A/3", "A", "3A"], a: 3 }, // Corrected based on answer 20 [cite: 37]
+  { q: "46. Si una cuerda de una guitarra que posee tres antinodos, si su frecuencia fundamental vale 100 Hz es:", options: ["50 Hz", "100 Hz", "300 Hz", "200 Hz"], a: 2 }, // Corrected based on answer 21 [cite: 37]
+  { q: "47. La distancia que existe entre dos nodos consecutivos en una onda estacionaria es igual a:", options: ["2λ", "λ/4", "λ", "La mitad de la longitud de onda"], a: 3 }, // Corrected based on answer 22 [cite: 37]
+  { q: "48. La unidad de frecuencia en el SI es:", options: ["Julio", "Segundo", "Hertz", "Newton"], a: 2 }, // Corrected based on answer 23 [cite: 37]
+  { q: "49. Si la longitud de un péndulo simple se aumenta, el período:", options: ["Disminuye", "No cambia", "Se vuelve cero", "Aumenta"], a: 3 }, // Corrected based on answer 24 [cite: 37]
+  { q: "50. Si la masa del péndulo simple se disminuye, el período es:", options: ["Mayor", "Menor", "Sigue igual", "Cero"], a: 2 }, // Corrected based on answer 25 [cite: 37]
+  { q: "51. Si la masa de un sistema masa-resorte se cuadruplica, el período se:", options: ["No cambia", "Se reduce a la mitad", "Duplica", "Cuadruplica"], a: 2 }, // Corrected based on answer 26 [cite: 37]
+  { q: "52. El intervalo de decibeles que una persona normal escucha es de:", options: ["10–110 dB", "(0-120 dB)", "20–20 000 Hz", "0–100 dB"], a: 1 }, // Corrected based on answer 27 [cite: 37]
+  { q: "53. La intensidad mínima audible por el ser humano es:", options: ["10⁻⁹ W/m²", "10⁻⁶ W/m²", "10⁻³ W/m²", "1x10-12"], a: 3 }, // Corrected based on answer 28 [cite: 37]
+  { q: "54. La razón entre la masa en reposo de un electrón y un protón es de un orden de magnitud de:", options: ["10⁻¹", "10⁻³", "1", "10⁻⁴"], a: 3 }, // Corrected based on answer 29 [cite: 37]
+  { q: "55. El nivel de intensidad sonora a una distancia de 10 m de una fuente puntual es 10 dB, ¿cómo es el nivel de intensidad cuando la distancia aumenta?:", options: ["= 10 dB", "= 0 dB", "> 10 dB", "Disminuye 3.98 dB"], a: 3 }, // Corrected based on answer 30 [cite: 37]
+  { q: "56. Si una onda electromagnética tiene polarizado el campo eléctrico en el eje y, y la rapidez de propagación de la onda está en la dirección negativa del eje x, la dirección del campo magnético está en dirección:", options: ["+x", "+y", "+z", "-z"], a: 3 }, // Corrected based on answer 31 [cite: 37]
+  { q: "57. La energía en reposo de un electrón en MeV es:", options: ["0.127", "0.256", "0.511 MeV", "1.022"], a: 2 }, // Corrected based on answer 32 [cite: 37]
+  { q: "58. La distancia que recorre una onda en un tiempo igual a un período se llama:", options: ["Frecuencia", "Periodo", "Velocidad", "Longitud de onda"], a: 3 }, // Corrected based on answer 33 [cite: 37]
+  { q: "59. La razón entre la rapidez de la luz en el espacio libre y la rapidez en un medio se llama:", options: ["Permeabilidad", "Permitividad", "Velocidad relativa", "Índice de refracción (n)"], a: 3 }, // Corrected based on answer 34 [cite: 37]
+  { q: "60. Si una onda se propaga en un medio cuya longitud de onda es el doble que cuando se propaga en otro medio, la razón de sus velocidades de propagación es:", options: ["0.5", "1", "√2", "V1=2V2"], a: 3 }, // Corrected based on answer 35 [cite: 37]
+  { q: "61. ¿Cuál es el rango aproximado del espectro electromagnético para el visible?:", options: ["1–10 µm", "700–1000 nm", "100–400 nm", "(400nm-700nm)"], a: 3 }, // Corrected based on answer 36 [cite: 37]
+  { q: "62. Un observador en reposo percibe una frecuencia de 100 Hz cuando una ambulancia se acerca a este, si la ambulancia se aleja de éste, ¿cómo será la frecuencia percibida por el observador?:", options: ["= f₀", "0 Hz", "> f₀", "Disminuye"], a: 3 }, // Corrected based on answer 37 [cite: 37]
+  { q: "63. El efecto fotoeléctrico se produce cuando la longitud de onda del fotón incide sobre el metal:", options: ["> λ_umbral", "= λ_umbral", "nulo", "Mas corta"], a: 3 }, // Corrected based on answer 38 [cite: 37]
+  { q: "64. En el efecto fotoeléctrico, la energía cinética máxima de los fotoelectrones emitidos es directamente proporcional a la del fotón incidente.", options: ["Amplitud", "Intensidad", "Frecuencia", "Longitud de onda"], a: 2 }, // Corrected based on answer 39 [cite: 37]
+  { q: "65. La cantidad de movimiento de un fotón es inversamente proporcional a la:", options: ["Energía", "Velocidad", "Frecuencia", "Longitud de onda"], a: 3 }, // Corrected based on answer 40 [cite: 37]
+  { q: "66. Las imágenes formadas por lentes divergentes son:", options: ["Reales e invertidas", "Virtuales e invertidas", "Reales y derechas", "Virtuales, derechas y menor tamaño"], a: 3 }, // Corrected based on answer 41 [cite: 37]
+  { q: "67. Cuando un objeto se ubica en el centro de curvatura frente a un espejo cóncavo la imagen es:", options: ["Virtual y derecha", "Ampliada", "Invertida, real, igual tamaño", "Diminuta"], a: 2 }, // Corrected based on answer 42 [cite: 38]
+  { q: "68. En el espectro de ondas electromagnéticas, qué tipo de ondas corresponde a aquellas donde su longitud es del orden de los metros:", options: ["Infrarrojo", "Luz visible", "Microondas", "Ondas de radio o tv"], a: 3 }, // Corrected based on answer 43 [cite: 38]
+  { q: "69. La razón entre la frecuencia angular y la velocidad de propagación de una onda corresponde al:", options: ["T", "λ", "ω", "Numero de onda"], a: 3 }, // Corrected based on answer 44 [cite: 38]
+  { q: "70. En el efecto fotoeléctrico se cumple que la frecuencia del fotón incidente debe ser que la frecuencia umbral o de corte del material.", options: ["<", "=", "×", "Mayor"], a: 3 }, // Corrected based on answer 45 [cite: 38]
+  { q: "71. Si la velocidad a la que se mueve un cohete es cercana de 0,86c, qué sucede con su longitud:", options: ["Dilata", "Mantiene", "Invierte", "Se reduce"], a: 3 }, // Corrected based on answer 46 [cite: 38]
+  { q: "72. Si un rayo de luz atraviesa un medio de un índice de refracción menor a uno mayor, el ángulo refractado es que el ángulo incidente.", options: ["Igual", "Mayor", "Nulo", "Menor"], a: 3 }, // Corrected based on answer 47 [cite: 38]
+  { q: "73. Sí un objeto se coloca a 8 cm a la izquierda de una lente divergente de distancia focal 4cm, entonces la distancia imagen es:", options: ["4 cm", "8 cm", "–8 cm", "-2.667 cm"], a: 3 }, // Corrected based on answer 48 [cite: 38]
+  { q: "74. La diferencia entre la energía total de un cuerpo y su energía en estado de reposo es la:", options: ["Libre", "Exceso", "Potencial", "Energía cinética"], a: 3 }, // Corrected based on answer 49 [cite: 38]
+  { q: "75. A cuanto equivale una energía de 200 Julios en MeV:", options: ["0.20×10⁻³", "2.00×10⁰", "1.25×10¹⁵", "1.25X10^MeV"], a: 3 }, // Corrected based on answer 50 [cite: 38]
+  { q: "76. El producto de la carga eléctrica por el potencial de frenado en el efecto fotoeléctrico se llama:", options: ["Potencia", "Potencial", "Trabajo", "Energía cinética máxima"], a: 3 }, // Corrected based on answer 51 [cite: 38]
+  { q: "77. Si un rayo de luz pasa de un medio de mayor índice de refracción a uno de menor índice de refracción, entonces, el ángulo de incidencia es que el ángulo refractado.", options: ["Menor", "Igual", "Inverso", "Menor"], a: 3 }, // Corrected based on answer 52 [cite: 38]
+  { q: "78. Los fotones son partículas cuya masa en estado de reposo es:", options: ["1", "–1", "0.5", "Cero"], a: 3 }, // Corrected based on answer 53 [cite: 38]
+  { q: "79. La dirección del vector de Poynting de una onda electromagnética es la misma de la:", options: ["Campo E", "Campo B", "Plano de onda", "Propagación de la onda"], a: 3 }, // Corrected based on answer 54 [cite: 38]
+  { q: "80. El punto donde convergen los rayos refractados paralelos al eje principal en una lente convergente se llama:", options: ["Centro", "Origen", "Plano focal", "Foco"], a: 3 }, // Corrected based on answer 55 [cite: 38]
+  { q: "81. Cómo son las imágenes formadas por los espejos convexos:", options: ["Reales e invertidas", "Virtuales e invertidas", "Reales", "Virtual, derecha y de menor tamaño"], a: 3 }, // Corrected based on answer 56 [cite: 38]
+  { q: "82. La energía en MeV de un fotón de longitud de onda 400 nm es:", options: ["4.14×10⁻³", "1.24×10⁻³", "6.20×10⁻⁵", "3.1x10-6 MeV"], a: 3 }, // Corrected based on answer 57 [cite: 38]
+  { q: "83. Si en t=0 y x=0, la función de una onda senoidal es cero, la fase inicial es:", options: ["π", "π/2", "2π", "Cero"], a: 3 }, // Corrected based on answer 58 [cite: 38]
+  { q: "84. La miopía es un defecto visual que se corrige con lentes:", options: ["Convergentes", "Planas", "Asféricas", "Divergentes"], a: 3 }, // Corrected based on answer 59 [cite: 38]
+  { q: "85. El promedio de la magnitud del vector de Poynting en una onda electromagnética plana representa:", options: ["Potencia", "Energía", "Flujo", "Cantidad promedio de energía"], a: 3 }, // Corrected based on answer 60 [cite: 38]
+  { q: "86. Un ojo emétrope es un ojo:", options: ["Miopía", "Hipermetropía", "Astigmatismo", "Perfecto"], a: 3 }, // Corrected based on answer 61 [cite: 38]
+  { q: "87. A bajas velocidades el factor de Lorentz tiende a:", options: ["0", "∞", "c", "1"], a: 3 }, // Corrected based on answer 62 [cite: 38]
+  { q: "88. La longitud de onda de Compton tiene un valor en nm de:", options: ["0.0243", "0.243", "2.43", "0.00243 nm"], a: 3 }, // Corrected based on answer 63 [cite: 38]
+  { q: "89. La dispersión de Compton de la longitud de onda depende del ángulo del dispersado.", options: ["2θ", "π", "λ", "Foton"], a: 3 }, // Corrected based on answer 64 [cite: 38]
+  { q: "90. La energía de un fotón de rayos X tendrá una longitud de onda que la de un fotón en el ultravioleta.", options: ["Mayor", "Igual", "Inverso", "Menor"], a: 3 }, // Corrected based on answer 65 [cite: 38]
+  { q: "91. Si un rayo de luz pasa del agua (n=1,4) al aire (n=1), el ángulo crítico es:", options: ["30°", "60°", "90°", "45.6°"], a: 3 }, // Corrected based on answer 66 [cite: 38]
+  { q: "92. En un espejo cóncavo cuando un objeto se ubica en el foco, la imagen se ubica en:", options: ["Centro de curvatura", "Orígenes", "Plano focal", "No hay imagen"], a: 3 }, // Corrected based on answer 67 [cite: 38]
+  { q: "93. Si una lente convergente tiene una potencia de 5 dioptrías, su distancia focal en cm es:", options: ["5", "100", "50", "20 cm"], a: 3 }, // Corrected based on answer 68 [cite: 38]
+  { q: "94. La energía por unidad de tiempo corresponde a la:", options: ["Trabajo", "Energía", "Flujo", "La constante h"], a: 3 }, // Corrected based on answer 69 [cite: 38]
+  { q: "95. Si la frecuencia de corte de un metal es de 200 GHz, su función de trabajo en eV es:", options: ["1.32×10⁻³", "2.00×10⁻³", "0.40×10⁻³", "0.00083 eV"], a: 3 }, // Corrected based on answer 70 [cite: 38]
+  { q: "96. La hipermetropía se corrige con lentes:", options: ["Cóncavas", "Planas", "Esféricas", "Lentes convergentes"], a: 3 }, // Corrected based on answer 71 [cite: 38]
+  { q: "97. La energía en reposo de un protón en MeV es:", options: ["511", "105.7", "0", "940 MeV"], a: 3 }, // Corrected based on answer 72 [cite: 38]
+  { q: "98. Si la región del espectro en el UV está entre 400 y 700 nm, cual es el rango de sus energías en eV:", options: ["0.50–1.00", "3.10–4.00", "0.10–0.50", "1.78 eV a 3.1 Ev"], a: 3 }, // Corrected based on answer 73 [cite: 38]
+  { q: "99. Si una regla de 1 m, se encuentra en un sistema de referencia que se mueve a 0,8c, para un sistema en reposo la regla medirá:", options: ["1 m", "1.4 m", "0.8 m", "0.6 metros"], a: 3 }, // Corrected based on answer 74 [cite: 38]
+  { q: "100. Una onda viene descrita por la ecuación: y(x,t)=3(m)sin(5-2x), la dirección de propagación de la onda es:", options: ["–x", "+t", "–t", "Positiva en x"], a: 3 }, // Corrected based on answer 75 [cite: 38]
+  { q: "101. En la misma onda anterior la velocidad de propagación en m/s de la onda es:", options: ["0.4", "3.0", "1.5", "2.5 m/s"], a: 3 }, // Corrected based on answer 76 [cite: 38]
+  { q: "102. La pendiente de la gráfica de energía cinética máxima de los fotoelectrones en función de la frecuencia representa la:", options: ["φ (función de trabajo)", "c", "e", "Constante de Planck h"], a: 3 }, // Corrected based on answer 77 [cite: 38]
+  { q: "103. La cantidad de movimiento de un electrón en MeV/C cuya energía total es el doble de su energía en reposo es:", options: ["m c", "2 m c", "½ m c", "0.885 MeV"], a: 3 }, // Corrected based on answer 78 [cite: 38]
+  { q: "104. Si en el movimiento de un cuerpo el factor de Lorentz es de 5/3 la rapidez a la que se mueve dicho cuerpo es:", options: ["0.6 c", "0.5 c", "0.9 c", "0.8C"], a: 3 }, // Corrected based on answer 79 [cite: 38]
+  { q: "105. Diga si es F o V. La energía cinética máxima de los electrones emitidos depende de la intensidad de la luz incidente:", options: ["Verdadero", "Falso"], a: 1 },// Corrected based on answer 80 [cite: 38]
     { q: "106. ¿Qué ocurre con la frecuencia percibida de una fuente de sonido que se acerca a un observador?", options: ["Aumenta", "Disminuye", "Permanece igual", "Se hace cero"], a: 0 },
     { q: "107. Si la fuente de sonido se aleja de un observador, la longitud de onda percibida:", options: ["Aumenta", "Disminuye", "Permanece igual", "Se hace cero"], a: 0 },
     { q: "108. En el efecto Doppler, si el observador se mueve hacia una fuente estacionaria, la frecuencia percibida es:", options: ["Mayor", "Menor", "Igual", "Depende de la fase"], a: 0 },
