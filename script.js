@@ -9,8 +9,8 @@ const questions = [
     { q: "8. Una onda transversal oscila…", options: ["Paralela a la velocidad de propagacion", "Perpendicular a la velocidad de propagacion", "Sobrepuesta a la velocidad de propagacion"], a: 1 },
     { q: "9.La frecuencia de una OEM depende unicamente de: ", options: ["La fuente que la genera", "La intensidad de la onda ", "La amplitud de la onda", "El medio en donde actúa"], a: 1 },
     { q: "10. En la ecuación de onda v = λ·f, f es inversamente proporcional a λ pero directamente proporciona a:", options: ["La amplitud", "La frecuencia", "La longitud de onda", "La velocidad de propagacion"], a: 3 },
-    { q: "11. Fuerza en resorte F = -k·x, k es…", options: ["Constante de Hooke", "Masa", "Frecuencia", "Periodo"], a: 0 },
-    { q: "12. El periodo T en el M.A.S es T = 2π√(m/k), en donde posee una dependencia ________________ : ", options: ["Directa", "Inversa", "Cuadrática", "Ninguna"], a: 1 },
+    { q: "11. En la fuerza en resorte F = -kx, k es…", options: ["Constante de Hooke", "Masa", "Frecuencia", "Periodo"], a: 0 },
+    { q: "12. El periodo T en el M.A.S es T = 2π√(m/k), en donde posee una dependencia ________________ de k : ", options: ["Directa", "Inversa", "Cuadrática", "Ninguna"], a: 1 },
     { q: "13. La energía potencial en un resorte es…", options: ["½mv²", "½kx²", "k/x", "mx²"], a: 1 },
     { q: "14. Las ondas electromagnéticas, para viajar, necesitan de: ", options: ["Un medio material", "El vacío", "Sólo agua", "Sólo aire"], a: 1 },
     { q: "15. La luz visible abarca longitudes de onda entre: ", options: ["100–400 nm", "400–700 nm", "700–1000 nm", "1–10 mm"], a: 1 },
@@ -23,7 +23,7 @@ const questions = [
     { q: "22. Los Fotones liberan electrones en…", options: ["Corte láser", "Efecto Compton", "Efecto fotoeléctrico", "Dispersión"], a: 2 },
     { q: "23. En el efecto Compton, los fotones chocan contra…", options: ["Protones", "Electrones", "Neutrones", "Átomos completos"], a: 1 },
     { q: "24. El sonido es una onda…", options: ["Transversal", "Longitudinal", "Electromagnética", "Cuántica"], a: 1 },
-    { q: "25. Velocidad del sonido en aire es igual a: ", options: ["300 m/s", "343 m/s", "1500 m/s", "10 m/s"], a: 1 },
+    { q: "25. Velocidad del sonido en aire a 20 °C es igual a: ", options: ["300 m/s", "343 m/s", "1500 m/s", "10 m/s"], a: 1 },
     { q: "26. En un M.A.S, la dirección de la fuerza recuperadora es hacia:", options: ["El extremo", "El centro de masa", "La posición de equilibrio", "El nodo"], a: 2 }, // Corrected based on answer 1 [cite: 37]
   { q: "27. La velocidad en la posición de equilibrio de un M.A.S es:", options: ["Cero", "Infinita", "Mínima", "Máxima"], a: 3 }, // Corrected based on answer 2 [cite: 37]
   { q: "28. En los extremos de un M.A.S la aceleración es:", options: ["Constante", "Máxima", "Mínima", "Nula"], a: 1 }, // Corrected based on answer 3 [cite: 37]
